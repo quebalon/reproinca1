@@ -425,6 +425,9 @@ footer {
     background-color: #1FDE82;
     border-color: #1FDE82;
 }
+.contenedor1 p {
+    text-align: center;
+}
 
 /* Breakpoints responsive */
 

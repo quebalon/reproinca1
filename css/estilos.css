@@ -34,6 +34,13 @@ h6 {
     overflow: hidden;
     padding: 60px 0;
 }
+.copy {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 
 
 h1 {

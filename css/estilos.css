@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 
 body {
@@ -19,11 +22,13 @@ h6 {
     font-weight: 300;
 }
 
+
 .contenedor {
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+    
 }
 
 
@@ -34,6 +39,8 @@ h6 {
     overflow: hidden;
     padding: 60px 0;
 } 
+
+
 
 
 h1 {
@@ -73,12 +80,16 @@ nav {
 .nav .logo {
     margin-left: 20px;
     height: 60px;
+    drop-shadow: 5px;
+    
 
 }
 
 .nav .logo img {
     height: 100%;
     vertical-align: top;
+    
+    
     
 }
 
@@ -119,7 +130,9 @@ nav {
 .contenido-header>img {
     width: 450px;
     animation: ease-in animat 1s;
+
 }
+
 
 @keyframes animat {
     0% {
@@ -162,6 +175,7 @@ nav {
 .titulo {
     font-size: 50px;
 }
+
 
 /* About us */
 
@@ -434,6 +448,55 @@ footer {
 @media screen and (max-width:800px) {
     .titulo {
         font-size: 45px;
+    }
+    .nav {
+        padding: 0 10px;
+    }
+    .nav .logo{
+        margin-left:20px; 
+    }
+    .contenido-header>img {
+        width: 300px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #667db6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    /* About us */
+
+    .articulo {
+        width: 95%;
     }
 
     .contenido-header {
